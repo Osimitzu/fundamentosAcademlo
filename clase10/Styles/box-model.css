@@ -1,0 +1,40 @@
+* {
+    color: rgb(0, 0, 0);
+    /*Estas 3 instrucciones siempre hay que ponerlas en nuestros proyectos:*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #212F3D;
+}
+
+html {
+    font-size: 20;
+}
+
+div {
+    background-color: lightgray;
+    border: 10px solid rgb(218, 32, 119);
+    /*
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    */
+    padding: 50px; /*Si quieres el mismo pading para todos los lados solo es necesario usar un valor//
+    Si quieres un valor para top y bottom y otro valor para left y right solo es necesario agregar dos valores el primero para el eje Y
+    y el segundo para el eje X //
+    Si quieres distintos valores para los cuatro se agregan cuatro valores top, right, bottom y left respectivamente
+    */
+    text-align: center;
+    margin: 50; /*Funciona con las mismas reglas del padding*/
+    width: 20rem;
+    box-sizing: border-box; /* Siempre vamos a querer nuestros elementos en "border-box" en lugar de "content-box" que es la que esta por default*/
+    /*
+        Con box-sizing: content-box; el width se aplica sobre el contenido del elemento. 
+        
+        Con box-sizing: border-box; el width se aplica tomando en cuenta el borde y el padding.
+    */
+}

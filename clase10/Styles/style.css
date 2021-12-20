@@ -1,0 +1,78 @@
+
+* {
+    color: aqua;
+}
+
+body {
+    background-color: #212F3D;
+}
+
+/*
+    SELECTORES BASICOS
+
+    * // Universal ---> Selecciona a todos los elemntos que se encuentren en el documento html.
+    tagname // Etiqueta ---> Selecciona a todos los elemnetos del mismo tipo (misma etiqueta).
+    .clase // Class ---> Selecciona a todos los elementos que tengan la clase indicada.
+    #identificador // ID ---> Selecciona al unico elemento identificado con el ID indicado.
+
+
+*/
+
+/* 
+    SELECTOR POR DESCENDIENTE
+
+        padre elementosDescendientes{
+            estilos que quiero aplicar
+        }
+*/
+
+div#contenedor div {
+    color: black;
+    font-size: 30px;
+}
+
+div#contenedor div.square {
+
+    width: 100px;
+    height: 100px;
+    border: 1px solid whitesmoke;
+    color:violet
+}
+
+/*
+    SELECTOR DE HIJOS
+    padre>elementohijo
+*/
+
+div#contenedor>div {
+    /* font-family: Arial, Helvetica, sans-serif; */
+   /* border: 2px dashed tomato; */
+    box-shadow: 5px 5px 20px rgb(68, 66, 66);
+}
+
+/*
+    SELECTOR DE HERMANOS
+    Selecciona un elecmento inmediatamente despues del elemento indicado.
+    
+    elemento+hermano
+*/
+
+div+p {
+    background-color: peru;
+}
+
+div.square+p {
+    background-color: plum;
+}
+
+/*
+    SELECTOR DE HERMANOS
+    Me permite seleccionar a todos los hermanos que se encuentren despues del elemento de referencia
+
+    elemento~hermano
+*/
+
+div.square~p {
+    border: 3px dotted red;
+}
+

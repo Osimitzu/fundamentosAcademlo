@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- OTRA manera de agregar CSS (Tampoco recomendado)
+    <style type="text/css">
+        li{
+            background-color: peru;
+        }
+    </style>
+-->
+    <link rel="stylesheet" href="./styles/style.css"> <!-- ASÍ se agrega CSS -->
+</head>
+<body>
+    <!-- 
+        HTML Semantico
+
+        nav -> Navegar
+        header -> Encabezado 
+        main -> Contenido principal
+        aside -> Contenido relacionado 
+        section -> Delimita secciones del contenido principal
+        article -> Agrupa información en una sección 
+        footer -> Información sobre la plataforma // pie de pagina
+    -->
+    <!--
+    <main>
+        Este es un main 
+    </main>
+
+    <footer>
+        Este es un footer 
+    </footer>
+    
+    <div>
+        Este es un div
+    </div>
+    -->
+    <!-- <nav style="background-color:aqua;">  CSS agregado directamente (NO RECOMENDADO)-->
+    <nav>
+        <!-- LISTA DESORDENADA -->
+        <ul>
+            <li>
+                <!-- anchor -> genera un enlace --> 
+                <a href="./index.html">Home</a>
+            </li>
+            
+            <li> 
+                <a href="./pages/preguntasF.html"> Preguntas Frecuentes </a>        
+            </li>
+            
+            <li> 
+                <a href="https://developer.mozilla.org/es/" target="_blank">MDN</a>    
+            </li>
+            
+            <li> 
+                <a href="https://www.w3schools.com" target="_blank">w3schools</a>    
+            </li>
+        </ul>
+
+        <!--
+         LISTA ORDENADA que contiene elemntos de lista 
+        <ol>
+            <li> Elemento 1 </li>
+            <li> Elemento 2 </li>
+            <li> Elemento 3 </li>
+            <li> Elemento 4 </li>
+        </ol>
+        -->
+
+    </nav>
+
+    <div class="cuadrado">1</div>
+    <div class="cuadrado color-rosa">2</div>
+    <div id="circulo-peru">3</div>
+    <div class="color-rosa">4</div>
+    
+</body>
+</html>
